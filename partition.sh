@@ -1,13 +1,18 @@
 #!/bin/bash
+clear
 
 echo "Logic Volume Creation ..."
-sleep 5
+source sleep 5
 lvcreate.sh
 
 echo "Formating With ext4 && swap ..."
 sleep 5
-filesystem.sh
+source filesystem.sh
 
 echo "mounting ..."
 sleep 5
-mount.sh
+source mount.sh
+
+echo "Updatinr fstab ..."
+sleep 5
+source up_fstab.sh

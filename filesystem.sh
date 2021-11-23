@@ -8,8 +8,6 @@ do
 	mkfs.ext4 ${lv_path}${lv_name[$i]}
 done
 
-#swapon
-
 mkswap ${lv_path}swap
 swapon ${lv_path}swap
 
