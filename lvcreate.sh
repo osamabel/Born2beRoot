@@ -6,5 +6,5 @@ vg=LVMGroup
 
 for i in ${!lv_names[@]}
 do
-	lvcreate -Wy -L ${lv_size[$i]} -n ${lv_names[$i]} $vg
+	lvcreate --yes -L ${lv_size[$i]} -n ${lv_names[$i]} $vg
 done

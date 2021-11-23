@@ -1,24 +1,35 @@
 #!/bin/bash
 clear
-
 echo "Create by [ obelkah ]"
+echo ""
+echo ""
+
+echo "####### REST VOLUME GROUP..."
+sleep 2
+source reset.sh
+echo ""
+echo ""
 
 echo "#######  Logic Volume Creation ..."
-source sleep 2
-lvcreate.sh
-clear
+sleep 2
+source lvcreate.sh
 
+echo ""
+echo ""
 
 echo "#######  Formating With ext4 && swap ..."
 sleep 2
 source filesystem.sh
-clear
 
+echo ""
+echo ""
 
 echo "#######  mounting ..."
 sleep 2
 source mount.sh
-clear
+
+echo ""
+echo ""
 
 echo "#######  Updatinr fstab ..."
 sleep 2
